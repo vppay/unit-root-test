@@ -1,14 +1,10 @@
-unit-root-test
+Unit-root-test
 
 to conduct various unit root test, add these commands after stationarity test
 
-noconstant
-constant (default)
-trend
-drift
+noconstant, constant(default), trend, drift
 
-example
-
+Example:
 Phillips–Perron unit-root test for y using tsset data
  pperron y
  Same as above, and include a trend in the specification
