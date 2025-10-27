@@ -19,7 +19,7 @@ format date_q %tq
 tsset date_q
 
 * ============================================
-* 3. UJI STASIONERITAS
+* UJI STASIONERITAS
 * ============================================
 
 * Install KPSS jika belum (jalankan sekali saja)
@@ -86,7 +86,7 @@ foreach var of varlist mb gnp i unemp {
 }
 
 * ============================================
-* 4. TAMPILKAN TABEL RINGKASAN
+* TAMPILKAN TABEL RINGKASAN
 * ============================================
 
 display _newline(3)
@@ -95,7 +95,7 @@ display
 matrix list results, format(%9.4f)
 
 * ============================================
-* 5. TABEL LEBIH RAPI (MANUAL)
+* TABEL LEBIH RAPI (MANUAL)
 * ============================================
 
 display _newline(2)
@@ -128,7 +128,7 @@ foreach var in mb gnp i unemp {
 display "{hline 120}"
 
 * ============================================
-* 6. EXPORT KE EXCEL (OPSIONAL)
+* EXPORT KE EXCEL (OPSIONAL)
 * ============================================
 
 putexcel set "hasil_stasioneritas constant.xlsx", replace
@@ -170,3 +170,4 @@ display "Hasil telah diekspor ke: hasil_stasioneritas constant.xlsx"
 * KPSS Test: stat < critical value → Stasioner
 * Kesimpulan akhir: berdasarkan mayoritas (2 dari 3 test)
 * ============================================
+
